@@ -19,15 +19,17 @@ export default function App() {
 
     const header = document.querySelector('header');
 
+    if(header){
     const handleScroll = event => {
      if(document.documentElement.scrollTop > 100){
-    header.setAttribute('style', 'position: fixed; left: 0; right: 0; z-index: 9999');
+    header.setAttribute('style', 'position: fixed; left: 0; right: 0; top: 0; z-index: 9999');
      } else {
       header.setAttribute('style', 'position: relative;');
      }
     };
 
     window.addEventListener('scroll', handleScroll);
+  }
 
   },[])
 
@@ -41,7 +43,7 @@ export default function App() {
       <Header />
       <Routes>
     
-          <Route path="/" element={<Main />} />
+          <Route path="/" exact element={<Main />} />
           <Route path="/about" element={<Porto />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />

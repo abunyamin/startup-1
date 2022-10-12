@@ -6,17 +6,17 @@ const Header = () => {
 
   return(
     <>
-      <header>
-        <div className="logo"><NavLink href="/">
+      <header><NavLink href="/">
+        <div className="logo">
           <div className="logo__image"><img src="https://i.ibb.co/58Xtybs/Group-1logo.png" alt="Logo Start" /></div>
           <div className="logo__text">Start</div>
-          </NavLink>
         </div>
+        </NavLink>
         <ul className="nav-menu">
-          <li><NavLink href="/">Home</NavLink></li>
-          <li><NavLink href="/about">Portofolio</NavLink></li>
-          <li><NavLink href="/services">Services</NavLink></li>
-          <li><NavLink href="/contact">Contact</NavLink></li>
+          <li><NavLink to="/" end>Home</NavLink></li>
+          <li><NavLink to="/about">Portofolio</NavLink></li>
+          <li><NavLink to="/services">Services</NavLink></li>
+          <li><NavLink to="/contact">Contact</NavLink></li>
         </ul>
         <div className="nav-bar">
   <FaBars />

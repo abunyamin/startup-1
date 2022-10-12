@@ -1,8 +1,11 @@
 import React from 'react'
+import './Porto.css'
+
 
 const Porto = () => {
 
   return(<>
+  <div className="container">
   <div className="porto">
     <div className="porto__head">
       <div className="porto__head--top">WORKS</div>
@@ -21,7 +24,11 @@ const Porto = () => {
 <img src="https://i.ibb.co/5W6qk41/Frame-43.png" alt="Frame-43" />
 <img src="https://i.ibb.co/WPBHcv1/Frame4.png" alt="Frame4" />
   </div>
+  <div className="porto__button learnmore__button">Learn More</div>
   </div>
+
+  </div>
+
 
 
   </>)

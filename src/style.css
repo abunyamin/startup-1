@@ -58,6 +58,11 @@ ul.nav-menu li a {
   color: #ffffff;
 }
 
+ul.nav-menu li a.active, ul.nav-menu li a:hover {
+  color: #525B88;
+  font-weight: 700;
+}
+
 .nav-bar {
   display: none;
 }
@@ -409,6 +414,17 @@ footer {
 .copyright {
   font-size: 20px;
   line-height: 25px;
+  color: #ffffff;
+}
+
+.learnmore__button {
+  width: 170px;
+  height: 48px;
+  background-color: #212529;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 48px;
+  text-align: center;
   color: #ffffff;
 }
 
