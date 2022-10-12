@@ -1,13 +1,17 @@
 import React, { useEffect } from 'react';
 import './style.css';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Partner from './components/Partner';
-import Content from './components/Content';
-import Content2 from './components/Content2';
-import Team from './components/Team';
+import Main from './components/Main';
+import Porto from './components/Porto';
+import Services from './components/Services';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Helmet from 'react-helmet'
+import {
+  Routes,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 export default function App() {
 
@@ -33,12 +37,15 @@ export default function App() {
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Work+Sans&display=swap" rel="stylesheet"/>
     <title>Startup</title>
       </Helmet>
+      
       <Header />
-      <Hero />
-      <Partner />
-      <Content />
-      <Content2 />
-      <Team />
+      <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/about" element={<Porto />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Contact />} />
+      </Routes>
       <Footer />
     </>
   );

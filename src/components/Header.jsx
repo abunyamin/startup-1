@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -11,10 +12,10 @@ const Header = () => {
           <div className="logo__text">Start</div>
         </div>
         <ul className="nav-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Portofolio</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/about">Portofolio</Link></li>
+          <li><Link href="/services">Services</Link></li>
+          <li><Link href="/contact">Contact</Link></li>
         </ul>
         <div className="nav-bar">
 <FaBars />
