@@ -22,11 +22,12 @@ const Services = () => {
     </div>
   
   <div className="service__list">
-    <div className="service__card">
+
+    {card.map(card => <div className="service__card">
       <div className="service__card--head">
-        <div className="service__card--head-title">Basic</div>
+        <div className="service__card--head-title">{card.title}</div>
         <div className="service__card--head-price">
-          <span>$100</span>
+          <span>${card.price}</span>
           <span>/month</span>
         </div>
         <div className="service__card--head-desc">
@@ -57,7 +58,8 @@ const Services = () => {
     </ul> 
     
 <div className="service__button learnmore__button">Learn More</div> 
-    </div>
+    </div>)}
+    
   </div>
 
     </div>

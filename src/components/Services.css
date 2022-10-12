@@ -88,6 +88,14 @@
     text-align: center;
   }
 
+  .service__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-top: 50px;
+    /* flex-wrap: wrap; */
+  }
+
   ul.service__card--features {
     margin-bottom: 45px;
   }
