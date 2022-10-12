@@ -1,0 +1,80 @@
+.porto {
+  min-height: 100vh;
+}
+
+.porto__head{
+max-width: 515px;
+min-width: 310px;
+display: flex;
+flex-direction: column;
+column-gap: 16px;
+margin-top: 30px;
+margin-bottom: 30px;
+margin-inline: auto;
+text-align: center;
+}
+
+.porto__head--top {
+  color: #74C69D;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.porto__head--title {
+  color: #000000;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  font-family: 'Crimson Text';
+}
+
+.porto__head--desc {
+color: #000000;
+font-size: 20px;
+line-height: 25px;
+letter-spacing: 10px;
+}
+
+.porto__list {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 55px;
+}
+
+.porto__list img {
+  max-width: 570px;
+  min-width: 280px;
+  height: auto;
+  margin-inline: auto;
+}
+
+.porto__button {
+  margin: 24px auto 99px;
+}
+
+@media (max-width: 1024px){
+
+}
+
+@media (max-width: 568px){
+
+  .porto__head--title {
+    color: #000000;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  
+.porto__list {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+  .porto__button {
+    margin: 20px auto 30px;
+  }
+}
