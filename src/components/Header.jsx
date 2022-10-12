@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaBars } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
 
@@ -12,13 +12,13 @@ const Header = () => {
           <div className="logo__text">Start</div>
         </div>
         <ul className="nav-menu">
-          <li><Link href="/">Home</Link></li>
-          <li><Link href="/about">Portofolio</Link></li>
-          <li><Link href="/services">Services</Link></li>
-          <li><Link href="/contact">Contact</Link></li>
+          <li><NavLink href="/">Home</NavLink></li>
+          <li><NavLink href="/about">Portofolio</NavLink></li>
+          <li><NavLink href="/services">Services</NavLink></li>
+          <li><NavLink href="/contact">Contact</NavLink></li>
         </ul>
         <div className="nav-bar">
-<FaBars />
+  <FaBars />
         </div>
     </header>
     </>

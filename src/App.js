@@ -40,11 +40,12 @@ export default function App() {
       
       <Header />
       <Routes>
+    
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<Porto />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Contact />} />
+      
       </Routes>
       <Footer />
     </>
