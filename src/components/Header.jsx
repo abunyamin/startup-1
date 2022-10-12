@@ -7,9 +7,10 @@ const Header = () => {
   return(
     <>
       <header>
-        <div className="logo">
+        <div className="logo"><NavLink href="/">
           <div className="logo__image"><img src="https://i.ibb.co/58Xtybs/Group-1logo.png" alt="Logo Start" /></div>
           <div className="logo__text">Start</div>
+          </NavLink>
         </div>
         <ul className="nav-menu">
           <li><NavLink href="/">Home</NavLink></li>
