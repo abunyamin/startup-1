@@ -107,10 +107,11 @@
       width: 100%;
       max-width: 100%;
     min-width: 100%;
-    height: max-widtheight cs;
+    height: auto;
     }
 
     .contact__row-2 iframe {
       width: 100%;
+      aspect-ratio: 1 / 1; 
     }
   }
