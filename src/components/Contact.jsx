@@ -12,6 +12,19 @@ const Contact = () => {
         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
       </div>
     </div>
+
+    <div className="contact__row-1">
+      <form action="">
+        <label htmlFor="name">Name</label>
+        <input type="text" name="name" placeholder="Name..." />
+        <label htmlFor="email">Email</label>
+        <input type="text" name="email" placeholder="Email..." />
+        <label htmlFor="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <button className="button__contact">Submit</button>
+      </form>
+    </div>
+    <div className="contact__row-2"></div>
     </div>
     </div>
   </>;

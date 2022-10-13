@@ -450,22 +450,6 @@ footer {
 padding: 0 72px;
   }
 
-  header {
-    padding-right: 72px;
-    padding-left: 72px;
-  }
-
-  .hero {
-    padding: 40px 72px 80px;
-  }
-}
-
-@media (max-width: 568px){
-  header {
-    padding-left: 48px;
-    padding-right: 48px;
-  }
-
   .nav-bar {
     display: block;
   }
@@ -478,6 +462,29 @@ padding: 0 72px;
 
   ul.nav-menu {
     display: none;
+  }
+
+  header {
+    padding-right: 72px;
+    padding-left: 72px;
+  }
+
+  .hero {
+    padding: 40px 72px 80px;
+  }
+
+
+}
+
+@media (max-width: 568px){
+
+  .container {
+    padding: 0 50px;
+  }
+
+  header {
+    padding-left: 48px;
+    padding-right: 48px;
   }
 
   .hero {

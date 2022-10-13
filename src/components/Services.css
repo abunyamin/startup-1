@@ -4,7 +4,7 @@
 
 .service__head{
   max-width: 515px;
-  min-width: 310px;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
   column-gap: 16px;
@@ -19,6 +19,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+    align-content: center;
   }
   
   .service__head--title {
@@ -128,3 +129,26 @@
   .service__button {
     margin-inline: auto;
   }
+
+  @media (max-width: 1024px) {
+
+    
+  .service__list {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    gap: 50px;
+  }
+
+}
+
+  
+@media (max-width: 568px){
+
+  .service__card--head-title {
+    color: #000000;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  
+}
